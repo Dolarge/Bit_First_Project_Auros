@@ -1,0 +1,7 @@
+C:\Users\bit\Desktop\github code\1_3)Cal_relect_s,p+Cal_alpha,beta\1_3)Cal_relect_s,p+Cal_alpha,beta\obj\Debug\1_3)Cal_relect_s,p+Cal_alpha,beta.csprojAssemblyReference.cache
+C:\Users\bit\Desktop\github code\1_3)Cal_relect_s,p+Cal_alpha,beta\1_3)Cal_relect_s,p+Cal_alpha,beta\obj\Debug\1_3)Cal_relect_s,p+Cal_alpha,beta.csproj.CoreCompileInputs.cache
+C:\Users\bit\Desktop\github code\1_3)Cal_relect_s,p+Cal_alpha,beta\1_3)Cal_relect_s,p+Cal_alpha,beta\bin\Debug\1_3)Cal_relect_s,p+Cal_alpha,beta.exe.config
+C:\Users\bit\Desktop\github code\1_3)Cal_relect_s,p+Cal_alpha,beta\1_3)Cal_relect_s,p+Cal_alpha,beta\bin\Debug\1_3)Cal_relect_s,p+Cal_alpha,beta.exe
+C:\Users\bit\Desktop\github code\1_3)Cal_relect_s,p+Cal_alpha,beta\1_3)Cal_relect_s,p+Cal_alpha,beta\bin\Debug\1_3)Cal_relect_s,p+Cal_alpha,beta.pdb
+C:\Users\bit\Desktop\github code\1_3)Cal_relect_s,p+Cal_alpha,beta\1_3)Cal_relect_s,p+Cal_alpha,beta\obj\Debug\1_3)Cal_relect_s,p+Cal_alpha,beta.exe
+C:\Users\bit\Desktop\github code\1_3)Cal_relect_s,p+Cal_alpha,beta\1_3)Cal_relect_s,p+Cal_alpha,beta\obj\Debug\1_3)Cal_relect_s,p+Cal_alpha,beta.pdb
