@@ -13,7 +13,7 @@ namespace _1_3_Cal_relect_s_p_Cal_alpha_beta
         static void Main(string[] args)
         {
             char[] replace = { ' ', ',', '\t', '\n' };
-            string[] Silines = File.ReadAllLines(@"C:\Users\bit\Desktop\BIT-auros\BIT\Si_new.txt", Encoding.Default);
+            string[] Silines = File.ReadAllLines(@"C:\Users\bit\Desktop\BIT-auros\BIT\Si_nm.txt", Encoding.Default);
 
             int Si_nm_linesNum = Silines.Length;
 
