@@ -1,13 +1,12 @@
-﻿using System.IO;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Console;
-using System.Numerics;
 
-namespace _1_3_Cal_relect_s_p_Cal_alpha_beta
+namespace _1_3_1_700nm_spectrum
 {
-    public class Si_nm_Data
+    class Si_nm_Data
     {
         public string nm { get; set; }
         public string n { get; set; }

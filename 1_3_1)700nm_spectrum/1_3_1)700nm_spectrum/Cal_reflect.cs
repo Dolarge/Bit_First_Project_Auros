@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using static System.Console;
 using System.Numerics;
 
-namespace _1_3_Cal_relect_s_p_Cal_alpha_beta
+namespace _1_3_1_700nm_spectrum
 {
     class Cal_reflect
     {
@@ -47,16 +47,7 @@ namespace _1_3_Cal_relect_s_p_Cal_alpha_beta
                     {
                         AOI = 40 + k * 2;
                         Complex N0 = new Complex(1, 0); // 공기 = 1
-                                                        //Console.WriteLine($"{si_nm}\t{ si_n }\t{ si_k}");
-                        //Complex N1 = new Complex(si_n, -si_k); // 매질 = 복소수
-                        //Complex sintheta1 = N0 * sin_AOI / N1;
-                        //Complex theta1 = Complex.Asin(sintheta1);   // 굴절각 세타1
-                        //Complex costheta1 = Complex.Cos(theta1);
-
-                        //Console.WriteLine($"{theta1}\t{sintheta1}\t{costheta1}");
-                        //Complex reflect_P = (N1 * cos_AOI - N0 * costheta1) / (N1 * cos_AOI + N0 * costheta1);
-                        //Complex reflect_s = (N0 * cos_AOI - N1 * costheta1) / (N0 * cos_AOI + N1 * costheta1);
-
+                        
                         // 반사율 (P, S)
                         double P_val = 0.0;
                         double S_Val = 0.0;
