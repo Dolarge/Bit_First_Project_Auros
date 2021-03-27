@@ -1,0 +1,7 @@
+C:\Users\bit\Desktop\github code\1_3_2)_350~1000nm_spectrum\1_3_2)_350~1000nm_spectrum\obj\Debug\1_3_2)_350~1000nm_spectrum.csprojAssemblyReference.cache
+C:\Users\bit\Desktop\github code\1_3_2)_350~1000nm_spectrum\1_3_2)_350~1000nm_spectrum\obj\Debug\1_3_2)_350~1000nm_spectrum.csproj.CoreCompileInputs.cache
+C:\Users\bit\Desktop\github code\1_3_2)_350~1000nm_spectrum\1_3_2)_350~1000nm_spectrum\bin\Debug\1_3_2)_350~1000nm_spectrum.exe.config
+C:\Users\bit\Desktop\github code\1_3_2)_350~1000nm_spectrum\1_3_2)_350~1000nm_spectrum\bin\Debug\1_3_2)_350~1000nm_spectrum.exe
+C:\Users\bit\Desktop\github code\1_3_2)_350~1000nm_spectrum\1_3_2)_350~1000nm_spectrum\bin\Debug\1_3_2)_350~1000nm_spectrum.pdb
+C:\Users\bit\Desktop\github code\1_3_2)_350~1000nm_spectrum\1_3_2)_350~1000nm_spectrum\obj\Debug\1_3_2)_350~1000nm_spectrum.exe
+C:\Users\bit\Desktop\github code\1_3_2)_350~1000nm_spectrum\1_3_2)_350~1000nm_spectrum\obj\Debug\1_3_2)_350~1000nm_spectrum.pdb
