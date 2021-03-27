@@ -29,14 +29,12 @@ namespace _1_3_2__350_1000nm_spectrum
                     n = splitData[1],
                     k = splitData[2]
                 });
-                //Console.WriteLine($"{splitData[0]}\t{splitData[1]}\t{splitData[2]}");
             }
 
             Cal_40_85_reflect_size.Cal_40_80_ref(Sirecords, Si_nm_linesNum);
             Cal_65_reflect_size.Cal_65_ref(Sirecords, Si_nm_linesNum);
             Cal_40_85_alpha.Cal_40_85_Alpha(Sirecords, Si_nm_linesNum);
             Cal_65_alpha.Cal_60_Alpha(Sirecords, Si_nm_linesNum);
-            WriteLine("Si_new.txt 생성");
         }
     }
 }

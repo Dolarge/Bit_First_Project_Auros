@@ -5,3 +5,10 @@ C:\Users\bit\Desktop\github code\1_3_1)700nm_spectrum\1_3_1)700nm_spectrum\obj\D
 C:\Users\bit\Desktop\github code\1_3_1)700nm_spectrum\1_3_1)700nm_spectrum\obj\Debug\1_3_1)700nm_spectrum.csproj.CoreCompileInputs.cache
 C:\Users\bit\Desktop\github code\1_3_1)700nm_spectrum\1_3_1)700nm_spectrum\obj\Debug\1_3_1)700nm_spectrum.exe
 C:\Users\bit\Desktop\github code\1_3_1)700nm_spectrum\1_3_1)700nm_spectrum\obj\Debug\1_3_1)700nm_spectrum.pdb
+C:\Bit_First_Project_Auros\1_3_1)700nm_spectrum\1_3_1)700nm_spectrum\bin\Debug\1_3_1)700nm_spectrum.exe.config
+C:\Bit_First_Project_Auros\1_3_1)700nm_spectrum\1_3_1)700nm_spectrum\bin\Debug\1_3_1)700nm_spectrum.exe
+C:\Bit_First_Project_Auros\1_3_1)700nm_spectrum\1_3_1)700nm_spectrum\bin\Debug\1_3_1)700nm_spectrum.pdb
+C:\Bit_First_Project_Auros\1_3_1)700nm_spectrum\1_3_1)700nm_spectrum\obj\Debug\1_3_1)700nm_spectrum.csprojAssemblyReference.cache
+C:\Bit_First_Project_Auros\1_3_1)700nm_spectrum\1_3_1)700nm_spectrum\obj\Debug\1_3_1)700nm_spectrum.csproj.CoreCompileInputs.cache
+C:\Bit_First_Project_Auros\1_3_1)700nm_spectrum\1_3_1)700nm_spectrum\obj\Debug\1_3_1)700nm_spectrum.exe
+C:\Bit_First_Project_Auros\1_3_1)700nm_spectrum\1_3_1)700nm_spectrum\obj\Debug\1_3_1)700nm_spectrum.pdb

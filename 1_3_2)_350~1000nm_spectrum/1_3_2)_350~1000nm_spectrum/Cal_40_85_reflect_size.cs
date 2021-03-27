@@ -30,7 +30,6 @@ namespace _1_3_2__350_1000nm_spectrum
             {
                 return Math.PI * (radian / 180.0f);
             }
-
            
             // 우리가 구해야 할 값            
             // sin65도 --> SIO2에 AOI
@@ -67,7 +66,6 @@ namespace _1_3_2__350_1000nm_spectrum
 
                         Complex reflect_P = (N1 * cos_AOI - N0 * costheta1) / (N1 * cos_AOI + N0 * costheta1);
                         Complex reflect_s = (N0 * cos_AOI - N1 * costheta1) / (N0 * cos_AOI + N1 * costheta1);                        
-
                         
                         // 반사율(크기)
                         P_val = Math.Pow(reflect_P.Magnitude,2);
@@ -76,6 +74,7 @@ namespace _1_3_2__350_1000nm_spectrum
                     }                    
                 }
             }
+            WriteLine("Si_nm_40~85_ref 생성 완료");
             streamWriter.Close();
         }
     }

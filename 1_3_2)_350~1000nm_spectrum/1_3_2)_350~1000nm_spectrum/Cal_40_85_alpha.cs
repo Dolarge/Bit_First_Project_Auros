@@ -61,7 +61,7 @@ namespace _1_3_2__350_1000nm_spectrum
                         double S_Val = 0.0;
 
                         AOI = 40 + 5 * k;
-
+                        
                         Complex sin_AOI = Complex.Sin(Rad2deg(AOI)); // 입사각
                         Complex cos_AOI = Complex.Cos(Rad2deg(AOI));
 
@@ -75,7 +75,6 @@ namespace _1_3_2__350_1000nm_spectrum
                         Complex reflect_P = (N1 * cos_AOI - N0 * costheta1) / (N1 * cos_AOI + N0 * costheta1);
                         Complex reflect_s = (N0 * cos_AOI - N1 * costheta1) / (N0 * cos_AOI + N1 * costheta1);
 
-
                         // 반사율(크기)
                         P_val = Math.Pow(reflect_P.Magnitude, 2);
                         S_Val = Math.Pow(reflect_s.Magnitude, 2);
@@ -88,18 +87,17 @@ namespace _1_3_2__350_1000nm_spectrum
 
                         double Delta = row.Phase;
                 
-
                         double tan_pow = 0.0;
                         double a_numeator = 0.0, a_denominator = 0.0;
                         double b_numeator = 0.0, b_denominator = 0.0;
                         double alpha = 0.0, beta = 0.0;
 
-                        tan_pow = Math.Pow(Math.Tan(dou_Rad2deg(Psi)), 2);
+                        tan_pow = Math.Pow(Math.Tan((Psi)), 2);
                         a_numeator = tan_pow - Math.Pow(Math.Tan(dou_Rad2deg(45)), 2);
                         a_denominator = tan_pow + Math.Pow(Math.Tan(dou_Rad2deg(45)), 2);
                         alpha = a_numeator / a_denominator;
 
-                        b_numeator = 2 * Math.Tan(dou_Rad2deg(Delta)) * Math.Cos(dou_Rad2deg(Delta)) * Math.Tan(dou_Rad2deg(45));
+                        b_numeator = 2 * Math.Tan((Delta)) * Math.Cos((Delta)) * Math.Tan(dou_Rad2deg(45));
                         b_denominator = tan_pow + Math.Pow(Math.Tan(dou_Rad2deg(45)), 2);
                         beta = b_numeator / b_denominator;
 
@@ -107,10 +105,10 @@ namespace _1_3_2__350_1000nm_spectrum
                         //
                         // alpha, beta 구하는 공식
                         streamWriter.WriteLine("{0}\t {1}\t {2}\t {3}", si_nm, AOI, alpha, beta);
-
                     }                   
                 }
             }
+            WriteLine("Si_nm_40~85_alpha 생성 완료");
             streamWriter.Close();
         }
     }
