@@ -76,6 +76,7 @@ namespace _1_3_2__350_1000nm_spectrum
                     // 65도(AOI)에서 Psi, Delta 값 구하기                       
                     double Psi = Math.Atan(row_size);
 
+                    // phase는 복소수에서의 위상
                     double Delta = row.Phase;
 
                     double tan_pow = 0.0;
