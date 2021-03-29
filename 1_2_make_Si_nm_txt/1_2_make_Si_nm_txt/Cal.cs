@@ -48,7 +48,7 @@ namespace _1_2_make_Si_nm_txt
 
                 
                 // 350이상 1000 이하인거 new 파일에 출력
-                //if (si_nm >= 350 && si_nm <= 1000)
+                
               
                 streamWriter1.WriteLine("{0}\t {1}\t {2}", si_nm, n, k);
                 

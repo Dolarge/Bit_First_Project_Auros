@@ -11,7 +11,7 @@ namespace _1_1_make_new_txt
     {
         public static void SiO2_2nm_Cal(List<SIO2Data_dat> records, int linenum)
         {
-            StreamWriter streamWriter = new StreamWriter(new FileStream("SiO2_2nm_on_Si_new.txt", FileMode.Create));
+            StreamWriter streamWriter = new StreamWriter(new FileStream("SiO2_2nm_on_Si_new.dat", FileMode.Create));
             streamWriter.WriteLine("wavelength(nm)\t AOI\t\t alpha\t beta");
 
             float floatwavelength = 0.0f;
@@ -45,7 +45,7 @@ namespace _1_1_make_new_txt
 
                 if (floatwavelength >= 350 && floatwavelength <= 1000)
                 {
-                    streamWriter.WriteLine("{0:5N}\t {1}\t {2:N4}\t {3:N4}", records[i].wavelength, records[i].AOI, alpha, beta);
+                    streamWriter.WriteLine("{0}\t {1}\t {2}\t {3}", records[i].wavelength, records[i].AOI, alpha, beta);
                 }
             }
         }

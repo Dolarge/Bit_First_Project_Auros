@@ -12,3 +12,10 @@ C:\Users\bit\Desktop\Bit_First_Project_Auros-master (1)\Bit_First_Project_Auros-
 C:\Users\bit\Desktop\Bit_First_Project_Auros-master (1)\Bit_First_Project_Auros-master\1_2_make_Si_nm_txt\1_2_make_Si_nm_txt\obj\Debug\1_2_make_Si_nm_txt.csproj.CoreCompileInputs.cache
 C:\Users\bit\Desktop\Bit_First_Project_Auros-master (1)\Bit_First_Project_Auros-master\1_2_make_Si_nm_txt\1_2_make_Si_nm_txt\obj\Debug\1_2_make_Si_nm_txt.exe
 C:\Users\bit\Desktop\Bit_First_Project_Auros-master (1)\Bit_First_Project_Auros-master\1_2_make_Si_nm_txt\1_2_make_Si_nm_txt\obj\Debug\1_2_make_Si_nm_txt.pdb
+C:\Bit_First_Project_Auros\1_2_make_Si_nm_txt\1_2_make_Si_nm_txt\bin\Debug\1_2_make_Si_nm_txt.exe.config
+C:\Bit_First_Project_Auros\1_2_make_Si_nm_txt\1_2_make_Si_nm_txt\bin\Debug\1_2_make_Si_nm_txt.exe
+C:\Bit_First_Project_Auros\1_2_make_Si_nm_txt\1_2_make_Si_nm_txt\bin\Debug\1_2_make_Si_nm_txt.pdb
+C:\Bit_First_Project_Auros\1_2_make_Si_nm_txt\1_2_make_Si_nm_txt\obj\Debug\1_2_make_Si_nm_txt.csprojAssemblyReference.cache
+C:\Bit_First_Project_Auros\1_2_make_Si_nm_txt\1_2_make_Si_nm_txt\obj\Debug\1_2_make_Si_nm_txt.csproj.CoreCompileInputs.cache
+C:\Bit_First_Project_Auros\1_2_make_Si_nm_txt\1_2_make_Si_nm_txt\obj\Debug\1_2_make_Si_nm_txt.exe
+C:\Bit_First_Project_Auros\1_2_make_Si_nm_txt\1_2_make_Si_nm_txt\obj\Debug\1_2_make_Si_nm_txt.pdb
