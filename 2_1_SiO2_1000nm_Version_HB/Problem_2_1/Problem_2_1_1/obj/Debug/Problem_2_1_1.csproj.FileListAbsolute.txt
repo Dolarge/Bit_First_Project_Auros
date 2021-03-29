@@ -1,0 +1,7 @@
+D:\AurosTech\Bit_First_Project_Auros\2_1_SiO2_1000nm\Problem_2_1\Problem_2_1_1\bin\Debug\Problem_2_1_1.exe.config
+D:\AurosTech\Bit_First_Project_Auros\2_1_SiO2_1000nm\Problem_2_1\Problem_2_1_1\bin\Debug\Problem_2_1_1.exe
+D:\AurosTech\Bit_First_Project_Auros\2_1_SiO2_1000nm\Problem_2_1\Problem_2_1_1\bin\Debug\Problem_2_1_1.pdb
+D:\AurosTech\Bit_First_Project_Auros\2_1_SiO2_1000nm\Problem_2_1\Problem_2_1_1\obj\Debug\Problem_2_1_1.csprojAssemblyReference.cache
+D:\AurosTech\Bit_First_Project_Auros\2_1_SiO2_1000nm\Problem_2_1\Problem_2_1_1\obj\Debug\Problem_2_1_1.csproj.CoreCompileInputs.cache
+D:\AurosTech\Bit_First_Project_Auros\2_1_SiO2_1000nm\Problem_2_1\Problem_2_1_1\obj\Debug\Problem_2_1_1.exe
+D:\AurosTech\Bit_First_Project_Auros\2_1_SiO2_1000nm\Problem_2_1\Problem_2_1_1\obj\Debug\Problem_2_1_1.pdb
