@@ -72,7 +72,10 @@ namespace _1_3_1_700nm_spectrum
 
                         P_val = reflect_P_size.Magnitude;
                         S_Val = reflect_s_size.Magnitude;
-                        streamWriter.WriteLine("{0}\t {1}\t {2}\t {3}", si_nm, AOI, P_val, S_Val);
+                        if(si_nm >= 700 && si_nm <701)
+                        {
+                            streamWriter.WriteLine("{0}\t {1}\t {2}\t {3}", si_nm, AOI, P_val, S_Val);
+                        }
                     }
                 }
 
