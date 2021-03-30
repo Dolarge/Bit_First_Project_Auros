@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Console;
 
-namespace _2_1_reflection
+namespace _2_1_make_SiO2_1000_nm_new
 {
-    class Cal_01_12
+    class Cal_alpha_beta
     {
         public static void Cal_01(List<SiO2_new_Data> SiO2records, List<Si_new_Data> Sirecords, List<SiO2_1000nm_Data> SiO2_1000_records, int linenum1, int linenum2, int linenum3)
         {
@@ -22,7 +22,7 @@ namespace _2_1_reflection
             double si_nm = 0.0;
             double si_n = 0.0;
             double si_k = 0.0;
-            
+
             int AOI = 65;
             //int AOI = 65;
 
@@ -37,8 +37,8 @@ namespace _2_1_reflection
             {
                 return Math.PI * (radian / 180.0f);
             }
-                
-            
+
+
             // 반사계수            
             for (int i = 1; i < linenum1; i++)
             {
@@ -48,7 +48,7 @@ namespace _2_1_reflection
 
                 si_nm = Convert.ToSingle(Sirecords[i].nm);
                 si_n = Convert.ToSingle(Sirecords[i].n);
-                si_k = Convert.ToSingle(Sirecords[i].k);                
+                si_k = Convert.ToSingle(Sirecords[i].k);
 
                 if (si_nm > 350 && si_nm < 980)
                 {
@@ -61,7 +61,7 @@ namespace _2_1_reflection
                     //double cos_AOI = Math.Cos(dou_Rad2deg(AOI));
                     Complex sin_AOI = Complex.Sin(Rad2deg(AOI)); // 입사각
                     Complex cos_AOI = Complex.Cos(Rad2deg(AOI));
-                    
+
                     Complex N1 = new Complex(sio2_n, -sio2_k); // 매질 = 복소수
                     Complex N2 = new Complex(si_n, -si_k);
 
@@ -72,7 +72,7 @@ namespace _2_1_reflection
                     Complex sintheta2 = sin_AOI / N2;
                     Complex theta2 = Complex.Asin(sintheta2);
                     Complex costheta2 = Complex.Cos(theta2);
-                    WriteLine("{0} {1}", theta1, theta2);
+                    //WriteLine("{0} {1}", theta1, theta2);
                     Complex reflect_P_01 = (N1 * cos_AOI - N0 * costheta1) / (N1 * cos_AOI + N0 * costheta1);
                     Complex reflect_s_01 = (N0 * cos_AOI - N1 * costheta1) / (N0 * cos_AOI + N1 * costheta1);
                     Complex trans_P_01 = (2 * cos_AOI) / (N1 * cos_AOI + costheta1);
@@ -130,4 +130,3 @@ namespace _2_1_reflection
         }
     }
 }
-

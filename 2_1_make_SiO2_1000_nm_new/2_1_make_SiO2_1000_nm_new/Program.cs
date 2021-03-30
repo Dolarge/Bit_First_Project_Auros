@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2_1_reflection
+namespace _2_1_make_SiO2_1000_nm_new
 {
     class Program
     {
@@ -31,7 +31,7 @@ namespace _2_1_reflection
                 {
                     nm = splitData[0],
                     n = splitData[1],
-                    k = splitData[2]                    
+                    k = splitData[2]
                 });
             }
 
@@ -42,7 +42,7 @@ namespace _2_1_reflection
                 {
                     nm = splitData[0],
                     n = splitData[1],
-                    k = splitData[2]                    
+                    k = splitData[2]
                 });
             }
 
@@ -59,7 +59,7 @@ namespace _2_1_reflection
                 SiO2_1000_nm_linesNum++;
             }
 
-            Cal_01_12.Cal_01(SiO2records, Sirecords, SiO2_1000_records, Si_nm_linesNum, SiO2_nm_linesNum, SiO2_1000_nm_linesNum);
+            Cal_alpha_beta.Cal_01(SiO2records, Sirecords, SiO2_1000_records, Si_nm_linesNum, SiO2_nm_linesNum, SiO2_1000_nm_linesNum);
         }
     }
 }

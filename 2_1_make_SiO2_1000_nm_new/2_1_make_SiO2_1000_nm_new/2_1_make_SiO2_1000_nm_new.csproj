@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3D3C157F-47D8-409D-8007-B9DE3FA074BC}</ProjectGuid>
+    <ProjectGuid>{0A27855F-E7B8-4309-983F-68AE20FD105A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_2_1_reflection</RootNamespace>
-    <AssemblyName>2_1_reflection</AssemblyName>
+    <RootNamespace>_2_1_make_SiO2_1000_nm_new</RootNamespace>
+    <AssemblyName>2_1_make_SiO2_1000_nm_new</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cal_01_12.cs" />
+    <Compile Include="Cal_alpha_beta.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
