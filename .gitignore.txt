@@ -52,5 +52,18 @@ bld/
 *.out
 *.app
 
+/build/
+*.suo
+*.user
+_ReSharper.*/
+*.sdf
+bin/
+obj/
+Debug/
+Release/
+*.opensdf
+*.tlog
+*.log
+
 # picture format
 # *.bmp
