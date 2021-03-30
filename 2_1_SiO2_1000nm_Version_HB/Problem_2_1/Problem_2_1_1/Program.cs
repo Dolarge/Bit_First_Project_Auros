@@ -89,7 +89,6 @@ namespace Problem_2_1_1
 
             //계산함수
             Func(a,b)
-
         }
 
         // 작성 필요
