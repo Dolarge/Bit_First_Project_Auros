@@ -1,0 +1,16 @@
+C:\Users\dohyu\source\repos\KKoKiri\KKoKiri\bin\Debug\net5.0\KKoKiri.exe
+C:\Users\dohyu\source\repos\KKoKiri\KKoKiri\bin\Debug\net5.0\KKoKiri.deps.json
+C:\Users\dohyu\source\repos\KKoKiri\KKoKiri\bin\Debug\net5.0\KKoKiri.runtimeconfig.json
+C:\Users\dohyu\source\repos\KKoKiri\KKoKiri\bin\Debug\net5.0\KKoKiri.runtimeconfig.dev.json
+C:\Users\dohyu\source\repos\KKoKiri\KKoKiri\bin\Debug\net5.0\KKoKiri.dll
+C:\Users\dohyu\source\repos\KKoKiri\KKoKiri\bin\Debug\net5.0\ref\KKoKiri.dll
+C:\Users\dohyu\source\repos\KKoKiri\KKoKiri\bin\Debug\net5.0\KKoKiri.pdb
+C:\Users\dohyu\source\repos\KKoKiri\KKoKiri\obj\Debug\net5.0\KKoKiri.csprojAssemblyReference.cache
+C:\Users\dohyu\source\repos\KKoKiri\KKoKiri\obj\Debug\net5.0\KKoKiri.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dohyu\source\repos\KKoKiri\KKoKiri\obj\Debug\net5.0\KKoKiri.AssemblyInfoInputs.cache
+C:\Users\dohyu\source\repos\KKoKiri\KKoKiri\obj\Debug\net5.0\KKoKiri.AssemblyInfo.cs
+C:\Users\dohyu\source\repos\KKoKiri\KKoKiri\obj\Debug\net5.0\KKoKiri.csproj.CoreCompileInputs.cache
+C:\Users\dohyu\source\repos\KKoKiri\KKoKiri\obj\Debug\net5.0\KKoKiri.dll
+C:\Users\dohyu\source\repos\KKoKiri\KKoKiri\obj\Debug\net5.0\ref\KKoKiri.dll
+C:\Users\dohyu\source\repos\KKoKiri\KKoKiri\obj\Debug\net5.0\KKoKiri.pdb
+C:\Users\dohyu\source\repos\KKoKiri\KKoKiri\obj\Debug\net5.0\KKoKiri.genruntimeconfig.cache
