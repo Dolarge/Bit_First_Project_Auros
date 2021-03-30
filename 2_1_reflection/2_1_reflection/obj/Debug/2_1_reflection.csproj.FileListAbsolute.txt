@@ -1,0 +1,7 @@
+C:\Users\bit\Desktop\github code\2_1_reflection\2_1_reflection\obj\Debug\2_1_reflection.csprojAssemblyReference.cache
+C:\Users\bit\Desktop\github code\2_1_reflection\2_1_reflection\obj\Debug\2_1_reflection.csproj.CoreCompileInputs.cache
+C:\Users\bit\Desktop\github code\2_1_reflection\2_1_reflection\bin\Debug\2_1_reflection.exe.config
+C:\Users\bit\Desktop\github code\2_1_reflection\2_1_reflection\bin\Debug\2_1_reflection.exe
+C:\Users\bit\Desktop\github code\2_1_reflection\2_1_reflection\bin\Debug\2_1_reflection.pdb
+C:\Users\bit\Desktop\github code\2_1_reflection\2_1_reflection\obj\Debug\2_1_reflection.exe
+C:\Users\bit\Desktop\github code\2_1_reflection\2_1_reflection\obj\Debug\2_1_reflection.pdb
