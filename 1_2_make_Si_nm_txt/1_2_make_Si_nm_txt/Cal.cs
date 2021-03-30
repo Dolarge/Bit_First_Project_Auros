@@ -48,10 +48,10 @@ namespace _1_2_make_Si_nm_txt
 
                 
                 // 350이상 1000 이하인거 new 파일에 출력
-                if (si_nm >= 350 && si_nm <= 1000)
-                {
-                    streamWriter1.WriteLine("{0}\t {1}\t {2}", si_nm, n, k);
-                }
+                
+              
+                streamWriter1.WriteLine("{0}\t {1}\t {2}", si_nm, n, k);
+                
             }
             streamWriter1.Close();
         }
@@ -61,9 +61,9 @@ namespace _1_2_make_Si_nm_txt
             StreamWriter streamWriter = new StreamWriter(new FileStream("SIO2_nm.txt", FileMode.Create));
             streamWriter.WriteLine("wavelength(nm)\t n\t k");
 
-            float float_nm = 0.0f;
-            float float_n = 0.0f;
-            float float_k = 0.0f;
+            double float_nm = 0.0f;
+            double float_n = 0.0f;
+            double float_k = 0.0f;
             double sio2_nm = 0.0;
 
             for (int i = 1; i < linenum; i++)
@@ -73,13 +73,10 @@ namespace _1_2_make_Si_nm_txt
                 float_k = Convert.ToSingle(records[i].k);
 
                 // 수식 적용
-                sio2_nm = float_nm * Math.Pow(10, -1);
-                WriteLine(float_n);
-                // 350이상 1000 이하인거 new 파일에 출력
-                if (sio2_nm >= 350 && sio2_nm <= 1000)
-                {
-                    streamWriter.WriteLine("{0}\t {1}\t {2}", sio2_nm, float_n, float_k);
-                }
+                sio2_nm = float_nm * Math.Pow(10, -1);                
+               
+                streamWriter.WriteLine("{0}\t {1}\t {2}", sio2_nm, float_n, float_k);
+              
             }
             streamWriter.Close();
         }

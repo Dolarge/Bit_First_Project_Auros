@@ -15,8 +15,8 @@ namespace _1_2_make_Si_nm_txt
         {
             // 공통
             char[] replace = { ' ', ',', '\t', '\n' };
-            string[] Silines = File.ReadAllLines(@"C:\Users\bit\Desktop\BIT-auros\BIT\Si.txt", Encoding.Default);
-            string[] SIO2lines = File.ReadAllLines(@"C:\Users\bit\Desktop\BIT-auros\BIT\SIO2.txt", Encoding.Default);
+            string[] Silines = File.ReadAllLines("Si.txt", Encoding.Default);
+            string[] SIO2lines = File.ReadAllLines("SIO2.txt", Encoding.Default);
 
             int SilinesNum = Silines.Length;
             int SIO2linesNum = SIO2lines.Length;

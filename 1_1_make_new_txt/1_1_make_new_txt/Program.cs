@@ -11,7 +11,7 @@ namespace _1_1_make_new_txt
     {
         static void Main(string[] args)
         {
-            string[] SIO2lines = File.ReadAllLines(@"C:\Users\bit\Desktop\BIT-auros\BIT\SiO2_2nm_on_Si.dat", Encoding.Default);
+            string[] SIO2lines = File.ReadAllLines("SiO2_2nm_on_Si.dat", Encoding.Default);
 
             // 라인수
             int SIO2linesNum = SIO2lines.Length;
