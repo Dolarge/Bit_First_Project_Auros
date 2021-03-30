@@ -112,6 +112,3 @@ namespace Problem_2_1_1
     }
 }
 
-
-
-
