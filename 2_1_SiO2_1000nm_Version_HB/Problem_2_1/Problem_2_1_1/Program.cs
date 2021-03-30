@@ -34,16 +34,21 @@ namespace Problem_2_1_1
         static void Main(string[] args)
         {
             char[] replace = { ' ', ',', '\t', '\n' };
+            
             string[] SiLine = File.ReadAllLines(@"C:\Users\bit\Desktop\Project\Aros\SiO2_1000nm_on_Si.dat", Encoding.Default);
             string[] SiO2Line = File.ReadAllLines(@"C:\Users\bit\Desktop\Project\Aros\SiO2_1000nm_on_Si.dat", Encoding.Default);
-            int SiO2_1000nm_LineNum = SiO2Line.Length - 1; // 첫줄을 제외한 모든 라인의 수
+            string[] SiO2_1000nm_Line = File.ReadAllLines(@"C:\Users\bit\Desktop\Project\Aros\SiO2_1000nm_on_Si.dat", Encoding.Default);
             
-            List<SiO2_1000nm_data> SiO2Records = new List<SiO2_1000nm_data>();
-            List<SiO2_nk_data> SiO2_nk_Records = new List<SiO2_nk_data>();
+            int SiLine_LineNum = SiLine.Length - 1; // 첫줄을 제외한 모든 라인의 수
+            int SiO2Line_LineNum = SiO2Line.Length - 1; // 첫줄을 제외한 모든 라인의 수
+            int SiO2_1000nm_Line_LineNum = SiO2_1000nm_Line.Length - 1; // 첫줄을 제외한 모든 라인의 수
+            
             List<Si_nk_data> Si_nk_Records = new List<Si_nk_data>();
+            List<SiO2_nk_data> SiO2_nk_Records = new List<SiO2_nk_data>();
+            List<SiO2_1000nm_data> SiO2Records = new List<SiO2_1000nm_data>();
 
             // SiO2_1000nm 물성값 로딩
-            foreach (var line in SiO2Line)
+            foreach (var line in SiO2_1000nm_Line)
             {
                 string[] splitData = line.Split(replace, StringSplitOptions.RemoveEmptyEntries);
                 SiO2Records.Add(new SiO2_1000nm_data
@@ -55,6 +60,7 @@ namespace Problem_2_1_1
                 }) ;
             }
             SiO2Records.RemoveAt(0);
+
             // Si_nk 물성값 로딩
             foreach (var line in SiLine)
             {
@@ -82,16 +88,15 @@ namespace Problem_2_1_1
             SiO2_nk_Records.RemoveAt(0);
 
             //계산함수
-            //List<Si_nk_data> SiO2_nk = Si_nk_data_Convert_To_nk_Type(SiO2Records, SiO2_1000nm_LineNum);
-            //List<SiO2_nk_data> SiO2_nk = SiO2_nk_data_Convert_To_nk_Type(SiO2Records, SiO2_1000nm_LineNum);
+            
 
         }
 
         // 작성 필요
-        private static List<SiO2_nk_data> SiO2_nk_data_Convert_To_nk_Type(List<SiO2_1000nm_data> siO2Records, int siO2_1000nm_LineNum)
+        private static List<> Func(List<> Records, int LineNum)
         {
-            // Psi와 Delta 이용해서 n과 k 도출
-            List<SiO2_nk_data> SiO2_nk = new List<SiO2_nk_data>();
+            
+            List<> SiO2_nk = new List<>();
 
             return SiO2_nk;
 
