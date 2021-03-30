@@ -88,26 +88,27 @@ namespace Problem_2_1_1
             SiO2_nk_Records.RemoveAt(0);
 
             //계산함수
-            Func(a,b)
+            //Func(a,b)
         }
 
         // 작성 필요
-        private static List<> Func(List<> Records, int LineNum)
-        {
-            List<> SiO2_nk = new List<>();
-
-            return SiO2_nk;
-
-            double Rad2deg(double radian)
-            {
-                return Math.PI * (radian / 180.0f);
-            }
-
-            double dou_Rad2deg(double radian)
-            {
-                return Math.PI * (radian / 180.0f);
-            }
-        }
+        //private static List<> Func(List<> Records, int LineNum)
+        //{
+        //    List<> SiO2_nk = new List<>();
+        //
+        //    return SiO2_nk;
+        //
+        //    double Rad2deg(double radian)
+        //    {
+        //        return Math.PI * (radian / 180.0f);
+        //    }
+        //
+        //    double dou_Rad2deg(double radian)
+        //    {
+        //        return Math.PI * (radian / 180.0f);
+        //
+        //    }
+        //}
     }
 }
 

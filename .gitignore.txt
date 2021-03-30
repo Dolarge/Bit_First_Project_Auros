@@ -52,18 +52,10 @@ bld/
 *.out
 *.app
 
-/build/
+# User-specific files
 *.suo
 *.user
-_ReSharper.*/
-*.sdf
-bin/
-obj/
-Debug/
-Release/
-*.opensdf
-*.tlog
-*.log
+*.sln.docstates
 
 # picture format
 # *.bmp
