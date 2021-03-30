@@ -14,7 +14,7 @@ namespace _1_3_2__350_1000nm_spectrum
         static void Main(string[] args)
         {
             char[] replace = { ' ', ',', '\t', '\n' };
-            string[] Silines = File.ReadAllLines("Si_nm.txt", Encoding.Default);
+            string[] Silines = File.ReadAllLines("Si_new.txt", Encoding.Default);
 
             int Si_nm_linesNum = Silines.Length;
 

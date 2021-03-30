@@ -13,8 +13,8 @@ namespace _1_3_1_700nm_spectrum
     {
         public static void Si_relect(List<Si_nm_Data> records, int linenum)
         {
-            StreamWriter streamWriter = new StreamWriter(new FileStream("Si_new.txt", FileMode.Create));
-            streamWriter.WriteLine("wave(nm)\t P반사율\t S반사율");
+            StreamWriter streamWriter = new StreamWriter(new FileStream("Si_new_700.txt", FileMode.Create));
+            streamWriter.WriteLine("wave(nm)\t AOI\t P반사율\t S반사율");
 
             double si_nm = 0.0;
             double si_n = 0.0;
@@ -40,7 +40,7 @@ namespace _1_3_1_700nm_spectrum
                 si_nm = Convert.ToSingle(records[i].nm);
                 si_n = Convert.ToSingle(records[i].n);
                 si_k = Convert.ToSingle(records[i].k);
-                if (si_nm > 699 && si_nm < 705)
+                if (si_nm > 350 && si_nm < 980)
                 {
                     //WriteLine("{0}", si_n);
                     for (int k = 0; k <= AOI_num; k++)
@@ -72,7 +72,7 @@ namespace _1_3_1_700nm_spectrum
 
                         P_val = reflect_P_size.Magnitude;
                         S_Val = reflect_s_size.Magnitude;
-                        streamWriter.WriteLine("{0}\t {1:N5}\t {2:N5}", AOI, P_val, S_Val);
+                        streamWriter.WriteLine("{0}\t {1}\t {2}\t {3}", si_nm, AOI, P_val, S_Val);
                     }
                 }
 

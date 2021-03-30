@@ -12,7 +12,7 @@ namespace _1_3_1_700nm_spectrum
         static void Main(string[] args)
         {
             char[] replace = { ' ', ',', '\t', '\n' };
-            string[] Silines = File.ReadAllLines("Si_nm.txt", Encoding.Default);
+            string[] Silines = File.ReadAllLines("Si_new.txt", Encoding.Default);
 
             int Si_nm_linesNum = Silines.Length;
 
@@ -31,7 +31,7 @@ namespace _1_3_1_700nm_spectrum
             }
 
             Cal_reflect.Si_relect(Sirecords, Si_nm_linesNum);
-            WriteLine("Si_new.txt 생성");
+            WriteLine("Si_new_700.txt 생성");
         }
     }
 }

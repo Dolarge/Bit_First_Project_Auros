@@ -43,11 +43,12 @@ namespace _1_1_make_new_txt
                 b_denominator = tan_sq + Math.Pow(Math.Tan(Rad2deg(45)), 2); ;
                 beta = b_numeator / b_denominator;
 
-                if (floatwavelength >= 350 && floatwavelength <= 1000)
+                if (floatwavelength > 350 && floatwavelength < 980)
                 {
-                    streamWriter.WriteLine("{0}\t {1}\t {2}\t {3}", records[i].wavelength, records[i].AOI, alpha, beta);
+                    streamWriter.WriteLine("{0}\t {1}\t {2}\t {3}", floatwavelength, records[i].AOI, alpha, beta);
                 }
             }
+            streamWriter.Close();
         }
     }
 }

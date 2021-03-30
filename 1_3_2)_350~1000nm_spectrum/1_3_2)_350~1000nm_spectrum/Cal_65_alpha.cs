@@ -6,13 +6,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Numerics;
 using static System.Console;
+
 namespace _1_3_2__350_1000nm_spectrum
 {
     class Cal_65_alpha
     {
         public static void Cal_60_Alpha(List<Si_new_Data> records, int linenum)
         {
-            StreamWriter streamWriter = new StreamWriter(new FileStream("Si_nm_65_alpha.txt", FileMode.Create));
+            StreamWriter streamWriter = new StreamWriter(new FileStream("Si_new_65_alpha.txt", FileMode.Create));
             streamWriter.WriteLine("wave(nm)\t\t AOI\t alpha\t\t\t beta");
 
             double si_nm = 0.0;
@@ -76,7 +77,6 @@ namespace _1_3_2__350_1000nm_spectrum
                     // 65도(AOI)에서 Psi, Delta 값 구하기                       
                     double Psi = Math.Atan(row_size);
 
-                    // phase는 복소수에서의 위상
                     double Delta = row.Phase;
 
                     double tan_pow = 0.0;

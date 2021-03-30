@@ -13,7 +13,7 @@ namespace _1_3_2__350_1000nm_spectrum
     {
         public static void Cal_40_80_ref(List<Si_new_Data> records, int linenum)
         {
-            StreamWriter streamWriter = new StreamWriter(new FileStream("Si_nm_40~85_ref.txt", FileMode.Create));
+            StreamWriter streamWriter = new StreamWriter(new FileStream("Si_new_40~85_ref.txt", FileMode.Create));
             streamWriter.WriteLine("wave(nm)\t\t AOI\t P_reflect\t\t\t S_reflect");
 
             double si_nm = 0.0;
