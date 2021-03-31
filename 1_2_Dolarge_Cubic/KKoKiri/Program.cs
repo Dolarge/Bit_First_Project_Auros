@@ -16,11 +16,11 @@ namespace KKoKiri
         static void Main(string[] args)
         {
             char[] replace = { ' ', ',', '\t', '\n', Convert.ToChar(10), Convert.ToChar(13) };
-            char[] replace2SiO2 = { ' ', '\t', '\n', Convert.ToChar(10), Convert.ToChar(13) };
+            char[] replace2SiO2 = { ' ', '\t', '\n', Convert.ToChar(10), Convert.ToChar(13) };      //rn fn
             double ChangeX, ChangeY1, ChangeY2;
 
-          
-            #region 1.Dat 파일 읽기
+
+            #region 1.1 Dat 파일 읽기 //700nm 미포함
             string[] Dat_sioDat = File.ReadAllLines("SiO2 1000nm_on_Si.dat", Encoding.Default);
             List<sio2_2nm_on_si_dat> Dat_wavelen = new List<sio2_2nm_on_si_dat>();
             StreamReader sio2_2nm_text = new StreamReader(new FileStream("SiO2 1000nm_on_Si.dat", FileMode.Open));
@@ -57,13 +57,58 @@ namespace KKoKiri
             double[] Dat_double_Alpha = List_dat_alpha.ToArray();
             double[] Dat_double_Beta = List_dat_beta.ToArray();
 
-            sio2_2nm_text.Close();
+
+
+
             #endregion
 
+            #region 1.2 Dat 파일 읽기 //700nm 포함
+
+
+            List<double> List_dat_wave_700 = new List<double>();
+            List<double> List_dat_aoi_700 = new List<double>();
+            List<double> List_dat_alpha_700 = new List<double>();
+            List<double> List_dat_beta_700 = new List<double>();
+
+            double waveToDoubeWabe_700;
+
+            waveToDoubeWabe_700 = Convert.ToDouble(Dat_wavelen[1].wavelength);
+
+
+            //0~399    총400개 400번을 700을 넣어주기
+            List_dat_wave_700 = List_dat_wave;
+            List_dat_wave_700.Add(700.0);
+            double[] Sort_Dat_Wave = List_dat_wave_700.ToArray();
+            Array.Sort(Sort_Dat_Wave);
+
+     
+          
+
+            Console.WriteLine("12");
+
+
+            //새 파일 만들기
+            //StreamWriter Dat_700nm= new StreamWriter(new FileStream("SiO2 1000nm_on_Si(700nm).dat", FileMode.Create));
+            //List<sio2_2nm_on_si_dat> List_Dat_700 = new List<sio2_2nm_on_si_dat>();
+            //Dat_700nm.WriteLine("wavelength(nm)\tAOI\tAlpha\tBeta");
+
+            //for (int i = 0; i < Dat_double_wavelength.Length+1; i++)
+            //{
+            //    List_Dat_700.Add(new sio2_2nm_on_si_dat
+            //    {
+            //        wavelength = List_dat_wave[i],
+            //    }) ;
+
+            //}
+
+
+            sio2_2nm_text.Close();
+
+            #endregion
             #region 2.SiN 읽기---------------------------------------
             string[] siLines = File.ReadAllLines("SiN.txt", Encoding.Default);
             List<SiData> ReadData = new List<SiData>();
-            
+
             StreamWriter newdatfile = new StreamWriter(new FileStream("SIN.txt", FileMode.Open));
             foreach (var line in siLines)
             {
@@ -191,7 +236,7 @@ namespace KKoKiri
 
             #region 5. SiN_New 파일 쓰기
 
-            StreamWriter ChangeTxt = new StreamWriter(new FileStream("SIN_NEW.txt", FileMode.Create));
+            StreamWriter ChangeTxt = new StreamWriter(new FileStream("SIN_New.txt", FileMode.Create));
             List<NewData> List_SiN = new List<NewData>();
             ChangeTxt.WriteLine("wavelength(nm)\tn\tk");
 
@@ -218,10 +263,39 @@ namespace KKoKiri
             ChangeTxt.Close();
 
             #endregion
+            #region 5. SiN_New_700 파일 쓰기
+
+            StreamWriter ChangeTxt_700 = new StreamWriter(new FileStream("SIN_New_700.txt", FileMode.Create));
+            List<NewData> List_SiN_700 = new List<NewData>();
+            ChangeTxt_700.WriteLine("wavelength(nm)\tn\tk");
+
+            for (int i = 1; i < Sort_Dat_Wave.Length; i++)
+            {
+                if (Sort_Dat_Wave[i] > 350 && Sort_Dat_Wave[i] < 980)
+                {
+                    List_SiN_700.Add(new NewData
+                    {
+                        NEWnm = Sort_Dat_Wave[i],
+                        NEWN = (double)Sin_CSN.Interpolate(Sort_Dat_Wave[i]),
+                        NEWK = (double)Sin_CSK.Interpolate(Sort_Dat_Wave[i])
+                    });
+                }
+            }
+
+            for (int i = 0; i < List_SiN.Count; i++)
+            {
+                if (List_SiN[i].NEWnm >= 350)
+                {
+                    ChangeTxt_700.WriteLine("{0}\t{1}\t{2}", List_SiN_700[i].NEWnm, List_SiN_700[i].NEWN, List_SiN_700[i].NEWK);
+                }
+            }
+            ChangeTxt_700.Close();
+
+            #endregion
 
             #region 6. SiO2_new 파일 쓰기
 
-            
+
             StreamWriter ChageSio2Txt = new StreamWriter(new FileStream("SiO2_new.txt", FileMode.Create));
             List<NewData> List_SiO2 = new List<NewData>();
             ChageSio2Txt.WriteLine("wavelength(nm)\tn\tk");
@@ -242,6 +316,31 @@ namespace KKoKiri
             ChageSio2Txt.Close();
 
             #endregion
+
+            #region 6. SiO2_new_700 파일 쓰기
+
+
+            StreamWriter ChageSio2Txt_700 = new StreamWriter(new FileStream("SiO2_new_700.txt", FileMode.Create));
+            List<NewData> List_SiO2_700 = new List<NewData>();
+            ChageSio2Txt_700.WriteLine("wavelength(nm)\tn\tk");
+            //i=0은 해더, Dat_Double_NM= 파장값 ~.dat파일에서 뽑아온거
+            for (int i = 0; i < Sort_Dat_Wave.Length; i++)
+            {
+                if (Sort_Dat_Wave[i] > 980)
+                    break;
+
+                List_SiO2_700.Add(new NewData
+                {
+                    NEWnm = Sort_Dat_Wave[i],
+                    NEWN = (double)SiO2_CSN.Interpolate(Sort_Dat_Wave[i]),
+                    NEWK = (double)SiO2_CSK.Interpolate(Sort_Dat_Wave[i])
+                });
+                ChageSio2Txt_700.WriteLine("{0}\t{1}\t{2}", List_SiO2_700[i].NEWnm, List_SiO2_700[i].NEWN, List_SiO2_700[i].NEWK);
+            }
+            ChageSio2Txt_700.Close();
+
+            #endregion
+
 
             #region 7. Si_new 파일 쓰기
             StreamWriter ChageSiTxt = new StreamWriter(new FileStream("Si_new.txt", FileMode.Create));
@@ -265,6 +364,27 @@ namespace KKoKiri
 
             #endregion
 
+            #region 7. Si_new_700 파일 쓰기
+            StreamWriter ChageSiTxt_700 = new StreamWriter(new FileStream("Si_new_700.txt", FileMode.Create));
+            List<NewData> List_Si_700 = new List<NewData>();
+            ChageSiTxt_700.WriteLine("wavelength(nm)\tn\tk");
+
+            for (int i = 0; i < Sort_Dat_Wave.Length; i++)
+            {
+                if (Sort_Dat_Wave[i] > 980)
+                    break;
+
+                List_Si_700.Add(new NewData
+                {
+                    NEWnm = Sort_Dat_Wave[i],
+                    NEWN = (double)Si_CSN.Interpolate(Sort_Dat_Wave[i]),
+                    NEWK = (double)Si_CSK.Interpolate(Sort_Dat_Wave[i])
+                });
+                ChageSiTxt_700.WriteLine("{0}\t{1}\t{2}", List_Si_700[i].NEWnm, List_Si_700[i].NEWN, List_Si_700[i].NEWK);
+            }
+            ChageSiTxt_700.Close();
+
+            #endregion
         }
 
 
