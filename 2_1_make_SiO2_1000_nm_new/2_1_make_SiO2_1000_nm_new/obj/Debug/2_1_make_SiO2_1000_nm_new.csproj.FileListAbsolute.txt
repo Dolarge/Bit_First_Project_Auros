@@ -1,0 +1,7 @@
+C:\Users\bit\Desktop\github code\2_1_make_SiO2_1000_nm_new\2_1_make_SiO2_1000_nm_new\bin\Debug\2_1_make_SiO2_1000_nm_new.exe.config
+C:\Users\bit\Desktop\github code\2_1_make_SiO2_1000_nm_new\2_1_make_SiO2_1000_nm_new\bin\Debug\2_1_make_SiO2_1000_nm_new.exe
+C:\Users\bit\Desktop\github code\2_1_make_SiO2_1000_nm_new\2_1_make_SiO2_1000_nm_new\bin\Debug\2_1_make_SiO2_1000_nm_new.pdb
+C:\Users\bit\Desktop\github code\2_1_make_SiO2_1000_nm_new\2_1_make_SiO2_1000_nm_new\obj\Debug\2_1_make_SiO2_1000_nm_new.csprojAssemblyReference.cache
+C:\Users\bit\Desktop\github code\2_1_make_SiO2_1000_nm_new\2_1_make_SiO2_1000_nm_new\obj\Debug\2_1_make_SiO2_1000_nm_new.csproj.CoreCompileInputs.cache
+C:\Users\bit\Desktop\github code\2_1_make_SiO2_1000_nm_new\2_1_make_SiO2_1000_nm_new\obj\Debug\2_1_make_SiO2_1000_nm_new.exe
+C:\Users\bit\Desktop\github code\2_1_make_SiO2_1000_nm_new\2_1_make_SiO2_1000_nm_new\obj\Debug\2_1_make_SiO2_1000_nm_new.pdb
