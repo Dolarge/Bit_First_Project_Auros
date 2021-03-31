@@ -37,7 +37,7 @@ namespace _1_3_2__350_1000nm_spectrum
                 si_n = Convert.ToSingle(records[i].n);
                 si_k = Convert.ToSingle(records[i].k);
 
-                if (si_nm > 350 && si_nm < 1000)
+                if (si_nm > 350 && si_nm < 980)
                 {
 
                     // 65도에 대한 반사계수 비

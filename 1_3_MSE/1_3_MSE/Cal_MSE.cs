@@ -58,7 +58,7 @@ namespace _1_3_MSE
             for (int i = 0; i < linenum2-1; i++)
             {
                 MSE_sum += (Math.Pow((dSiO2_alpha_arr[i] - dSi_alpha_arr[i]), 2))
-                         + (Math.Pow((dSiO2_beta_arr[i] - dSi_beta_arr[i]), 2));
+                         + (Math.Pow((dSiO2_beta_arr[i] - dSi_beta_arr[i]), 2));                
                 //WriteLine(MSE_sum);
             }
             

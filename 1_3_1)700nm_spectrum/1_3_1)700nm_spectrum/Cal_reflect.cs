@@ -13,7 +13,7 @@ namespace _1_3_1_700nm_spectrum
     {
         public static void Si_relect(List<Si_nm_Data> records, int linenum)
         {
-            StreamWriter streamWriter = new StreamWriter(new FileStream("Si_new_700.txt", FileMode.Create));
+            StreamWriter streamWriter = new StreamWriter(new FileStream("Si_new_700_reflect.txt", FileMode.Create));
             streamWriter.WriteLine("wave(nm)\t AOI\t P반사율\t S반사율");
 
             double si_nm = 0.0;
@@ -51,13 +51,10 @@ namespace _1_3_1_700nm_spectrum
                         // 반사율 (P, S)
                         double P_val = 0.0;
                         double S_Val = 0.0;
-                        //P_val = reflect_P.Magnitude;
-                        //S_Val = reflect_s.Magnitude;
-
-
+              
                         // 브루스터 앵글 -> 그래프에서 값을 더 정확하게 보기 위함
-                        double angle_P = Math.Pow(P_val, 2);
-                        double angle_S = Math.Pow(S_Val, 2);
+                        //double angle_P = Math.Pow(P_val, 2);
+                        //double angle_S = Math.Pow(S_Val, 2);
 
                         Complex sin_AOI = Complex.Sin(Rad2deg(AOI));
                         Complex cos_AOI = Complex.Cos(Rad2deg(AOI));
@@ -70,18 +67,18 @@ namespace _1_3_1_700nm_spectrum
                         Complex reflect_P_size = (N1_size * cos_AOI - N0 * costheta1_size) / (N1_size * cos_AOI + N0 * costheta1_size);
                         Complex reflect_s_size = (N0 * cos_AOI - N1_size * costheta1_size) / (N0 * cos_AOI + N1_size * costheta1_size);
 
-                        P_val = reflect_P_size.Magnitude;
-                        S_Val = reflect_s_size.Magnitude;
-                        if(si_nm >= 700 && si_nm <701)
+                        P_val = Math.Pow(reflect_P_size.Magnitude,2);
+                        S_Val = Math.Pow(reflect_s_size.Magnitude,2);
+                       
+                        if(si_nm == 700)
                         {
                             streamWriter.WriteLine("{0}\t {1}\t {2}\t {3}", si_nm, AOI, P_val, S_Val);
                         }
                     }
-                }
-
+                }                
                 //WriteLine("{0:N3}\t {1:N3}\t {2:N3}", si_nm, P_val, S_Val);
-
             }
+            WriteLine("Si_new_700_reflect.txt 파일 생성");
             streamWriter.Close();
         }
     }
