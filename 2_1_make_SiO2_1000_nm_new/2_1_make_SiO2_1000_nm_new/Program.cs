@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _2_1_make_SiO2_1000_nm_new
 {
-    class Program
+    class Program 
     {
         static void Main(string[] args)
         {
@@ -60,6 +60,8 @@ namespace _2_1_make_SiO2_1000_nm_new
             }
 
             Cal_alpha_beta.Cal_01(SiO2records, Sirecords, SiO2_1000_records, Si_nm_linesNum, SiO2_nm_linesNum, SiO2_1000_nm_linesNum);
+
+            //등비급수의 "항의 개수"에 따른 alpha,beta 스펙트럼 계산
         }
     }
 }

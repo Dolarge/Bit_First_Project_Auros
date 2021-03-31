@@ -9,6 +9,7 @@ using static System.Console;
 
 namespace _2_1_make_SiO2_1000_nm_new
 {
+
     class Cal_alpha_beta
     {
         public static void Cal_01(List<SiO2_new_Data> SiO2records, List<Si_new_Data> Sirecords, List<SiO2_1000nm_Data> SiO2_1000_records, int linenum1, int linenum2, int linenum3)
@@ -22,6 +23,13 @@ namespace _2_1_make_SiO2_1000_nm_new
             double si_nm = 0.0;
             double si_n = 0.0;
             double si_k = 0.0;
+
+            //무한등비가 아닌 등비급수 계산하기 위해
+            //새로운 파일쓰기 위한 배열
+            string[] Array_new_NM = new string[linenum1-1];
+            string[] Array_new_Alpha = new string[linenum1-1];
+            string[] Array_new_Beta = new string[linenum1-1];
+            //------------------------
 
             int AOI = 65;
             //int AOI = 65;
@@ -37,6 +45,7 @@ namespace _2_1_make_SiO2_1000_nm_new
             {
                 return Math.PI * (radian / 180.0f);
             }
+
 
 
             // 반사계수            
@@ -73,15 +82,25 @@ namespace _2_1_make_SiO2_1000_nm_new
                     Complex theta2 = Complex.Asin(sintheta2);
                     Complex costheta2 = Complex.Cos(theta2);
                     //WriteLine("{0} {1}", theta1, theta2);
-                    Complex reflect_P_01 = (N1 * cos_AOI - N0 * costheta1) / (N1 * cos_AOI + N0 * costheta1);
-                    Complex reflect_s_01 = (N0 * cos_AOI - N1 * costheta1) / (N0 * cos_AOI + N1 * costheta1);
+                    Complex reflect_P_01 = (N1 * cos_AOI - N0 * costheta1) / (N1 * cos_AOI + N0 * costheta1);   //Rp
+                    Complex reflect_s_01 = (N0 * cos_AOI - N1 * costheta1) / (N0 * cos_AOI + N1 * costheta1);   //Rs
                     Complex trans_P_01 = (2 * cos_AOI) / (N1 * cos_AOI + costheta1);
                     Complex trans_s_01 = (2 * cos_AOI) / (cos_AOI + N1 * costheta1);
 
                     Complex reflect_P_12 = (N2 * costheta1 - N1 * costheta2) / (N2 * costheta1 + N1 * costheta2);
                     Complex reflect_s_12 = (N1 * costheta1 - N2 * costheta2) / (N1 * costheta1 + N2 * costheta2);
+
+                    Complex reflect_P_21 = (N1 * costheta2 - N2 * costheta1) / (N1 * costheta2 + N2 * costheta1);
+                    Complex reflect_s_21 = (N2 * costheta2 - N1 * costheta1) / (N2 * costheta2 + N1 * costheta1);
+
+
                     Complex trans_P_12 = (2 * N1 * costheta1) / (N2 * costheta1 + N1 * costheta2);
                     Complex trans_s_12 = (2 * N1 * costheta1) / (N1 * costheta1 + N2 * costheta2);
+
+                    Complex trans_P_21 = (2 * N2 * costheta2) / (N1 * costheta2 + N2 * costheta1);
+                    Complex trans_s_21 = (2 * N2 * costheta2) / (N2 * costheta2 + N1 * costheta1);
+
+
 
                     //WriteLine("{0} {1} {2} {3}", reflect_P_01, reflect_s_01, reflect_P_12, reflect_s_12);
 
@@ -98,20 +117,59 @@ namespace _2_1_make_SiO2_1000_nm_new
                     // 통합반사계수(P,S)
                     Complex Total_reflect_P = (reflect_P_01 + (reflect_P_12 * Complex.Exp(A)))
                                                 / (1 + reflect_P_01 * (reflect_P_12 * Complex.Exp(A)));
-                    Complex Total_reflect_S = (reflect_s_01 + (reflect_s_12 * Complex.Exp(A)))
-                                                / (1 + reflect_s_01 * (reflect_s_12 * Complex.Exp(A)));
+                    Complex Total_reflect_S =
+                        (reflect_s_01 + (reflect_s_12 * Complex.Exp(A)))
+                        / (1 + reflect_s_01 * (reflect_s_12 * Complex.Exp(A)));
+                     
+
+                    Complex Rp = reflect_P_01 + (trans_P_01 * reflect_P_12 * trans_P_12 * Complex.Exp(A)) * Sigma_P(200);
+                    Complex Rs = reflect_s_01 + (trans_s_01 * reflect_s_12 * trans_s_12 * Complex.Exp(A)) * Sigma_S(200);
+
+                    //Console.WriteLine("{0} {1}", Total_reflect_P, Total_reflect_S);
+
 
                     Complex row = (Total_reflect_P / Total_reflect_S);
+                    Complex row_new = (Rp / Rs);
+
                     double row_size = row.Magnitude; // tan(psi)
+                    double row_new_size = row_new.Magnitude;
 
                     double Psi = Math.Atan(row_size);
+                    double Psi_new = Math.Atan(row_new_size);
 
                     double Delta = row.Phase;
+                    double Delta_new = row_new.Phase;
 
                     double tan_pow = 0.0;
                     double a_numeator = 0.0, a_denominator = 0.0;
                     double b_numeator = 0.0, b_denominator = 0.0;
                     double alpha = 0.0, beta = 0.0;
+
+                    //등비급수의 "항의 개수(n)"
+                    double new_alpha = 0.0, new_beta = 0.0;
+
+
+                    Complex Sigma_P(int n)
+                    {
+                        Complex Sigma_Value = 0;
+                        for (int K = 0; K < n; K++)
+                        {
+                            Sigma_Value += Complex.Pow((reflect_P_12 * reflect_P_21 * Complex.Exp(A)), K);
+                        }
+
+                        return Sigma_Value;
+                    }
+
+                    Complex Sigma_S(int n)
+                    {
+                        Complex Sigma_Value = 0;
+                        for (int K = 0; K < n; K++)
+                        {
+                            Sigma_Value += Complex.Pow((reflect_s_12 * reflect_s_21 * Complex.Exp(A)), K);
+                        }
+                        return Sigma_Value;
+                    }
+                   // WriteLine("{0} {1} {2} {3}", Sigma_P(8000), Total_reflect_P, Sigma_S(8000), Total_reflect_S);
 
                     tan_pow = Math.Pow(Math.Tan((Psi)), 2);
                     a_numeator = tan_pow - Math.Pow(Math.Tan(dou_Rad2deg(45)), 2);
@@ -122,11 +180,58 @@ namespace _2_1_make_SiO2_1000_nm_new
                     b_denominator = tan_pow + Math.Pow(Math.Tan(dou_Rad2deg(45)), 2);
                     beta = b_numeator / b_denominator;
 
-                    streamWriter.WriteLine("{0} {1} {2} {3}", sio2_nm, AOI, alpha, beta);
+                    streamWriter.WriteLine("{0}\t{1}\t{2}\t{3}", sio2_nm, AOI, alpha, beta);
+
+                    //값 초기화 후 
+                    //새로 변경한 값 적용
+                    tan_pow = Math.Pow(Math.Tan((Psi_new)), 2);
+                    a_numeator = tan_pow - Math.Pow(Math.Tan(dou_Rad2deg(45)), 2);
+                    a_denominator = tan_pow + Math.Pow(Math.Tan(dou_Rad2deg(45)), 2);
+                    new_alpha = a_numeator / a_denominator;
+
+                    b_numeator = 2 * Math.Tan((Delta_new)) * Math.Cos((Delta_new)) * Math.Tan(dou_Rad2deg(45));
+                    b_denominator = tan_pow + Math.Pow(Math.Tan(dou_Rad2deg(45)), 2);
+                    new_beta = b_numeator / b_denominator;
+
+                    //배열에 저장 -> 추가로 뽑아내기
+                    //streamWriter.WriteLine("{0} {1} {2} {3}", sio2_nm, AOI, alpha, beta);
+
+
+                    //무한등비급수 수열 하기전에 "항의 개수"내가 정해서 구하기
+                    //Rp 등비수열 구하기
+                    Array_new_NM[i-1] = Convert.ToString(sio2_nm);
+                    Array_new_Alpha[i-1] = Convert.ToString(new_alpha);
+                    Array_new_Beta[i-1] = Convert.ToString(new_beta);
+
+
+                   
                 }
+
+
             }
             streamWriter.Close();
             WriteLine("SiO2_1000nm_on_Si_new.dat 생성 완료");
+
+            //2-1)등비수열 "항의 개수" 파일 생성
+            StreamWriter streamWriter_new = new StreamWriter(new FileStream("SiO2_1000nm_on_Si_new_dolarge.dat", FileMode.Create));
+            streamWriter_new.WriteLine("wave(nm)\t\t AOI\t alpha_new\t\t beta_new");
+            List<SiO2_1000nm_Data> SiO2_1000nm_NEW_Data = new List<SiO2_1000nm_Data>();
+
+            for (int a = 0; a < Array_new_NM.Length; a++)
+            {
+                SiO2_1000nm_NEW_Data.Add(new SiO2_1000nm_Data
+                {
+                    nm = Array_new_NM[a],
+                    AOI = "65",
+                    Psi = Array_new_Alpha[a],
+                    Delta = Array_new_Beta[a]
+                });
+                streamWriter_new.WriteLine("{0}\t{1}\t{2}\t{3}", SiO2_1000nm_NEW_Data[a].nm, SiO2_1000nm_NEW_Data[a].AOI, SiO2_1000nm_NEW_Data[a].Psi, SiO2_1000nm_NEW_Data[a].Delta);
+            }
+            streamWriter_new.Close();
+
+            WriteLine("SiO2_1000nm_on_Si_new_dolarge.dat 생성 완료");
+
         }
     }
 }
