@@ -1,0 +1,7 @@
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\2_1_MSE\2_1_MSE\obj\Debug\2_1_MSE.csprojAssemblyReference.cache
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\2_1_MSE\2_1_MSE\obj\Debug\2_1_MSE.csproj.CoreCompileInputs.cache
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\2_1_MSE\2_1_MSE\bin\Debug\2_1_MSE.exe.config
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\2_1_MSE\2_1_MSE\bin\Debug\2_1_MSE.exe
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\2_1_MSE\2_1_MSE\bin\Debug\2_1_MSE.pdb
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\2_1_MSE\2_1_MSE\obj\Debug\2_1_MSE.exe
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\2_1_MSE\2_1_MSE\obj\Debug\2_1_MSE.pdb
