@@ -19,3 +19,10 @@ C:\Users\bit\Desktop\3월 31일\Bit_First_Project_Auros-master (2)\Bit_First_Pro
 C:\Users\bit\Desktop\3월 31일\Bit_First_Project_Auros-master (2)\Bit_First_Project_Auros-master\1_3_MSE\1_3_MSE\obj\Debug\1_3_MSE.csproj.CoreCompileInputs.cache
 C:\Users\bit\Desktop\3월 31일\Bit_First_Project_Auros-master (2)\Bit_First_Project_Auros-master\1_3_MSE\1_3_MSE\obj\Debug\1_3_MSE.exe
 C:\Users\bit\Desktop\3월 31일\Bit_First_Project_Auros-master (2)\Bit_First_Project_Auros-master\1_3_MSE\1_3_MSE\obj\Debug\1_3_MSE.pdb
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (4)\Bit_First_Project_Auros-master\1_3_MSE\1_3_MSE\bin\Debug\1_3_MSE.exe.config
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (4)\Bit_First_Project_Auros-master\1_3_MSE\1_3_MSE\bin\Debug\1_3_MSE.exe
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (4)\Bit_First_Project_Auros-master\1_3_MSE\1_3_MSE\bin\Debug\1_3_MSE.pdb
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (4)\Bit_First_Project_Auros-master\1_3_MSE\1_3_MSE\obj\Debug\1_3_MSE.csprojAssemblyReference.cache
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (4)\Bit_First_Project_Auros-master\1_3_MSE\1_3_MSE\obj\Debug\1_3_MSE.csproj.CoreCompileInputs.cache
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (4)\Bit_First_Project_Auros-master\1_3_MSE\1_3_MSE\obj\Debug\1_3_MSE.exe
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (4)\Bit_First_Project_Auros-master\1_3_MSE\1_3_MSE\obj\Debug\1_3_MSE.pdb
