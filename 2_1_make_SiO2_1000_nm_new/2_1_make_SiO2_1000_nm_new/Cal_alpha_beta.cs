@@ -26,9 +26,9 @@ namespace _2_1_make_SiO2_1000_nm_new
 
             //무한등비가 아닌 등비급수 계산하기 위해
             //새로운 파일쓰기 위한 배열
-            string[] Array_new_NM = new string[linenum1-1];
-            string[] Array_new_Alpha = new string[linenum1-1];
-            string[] Array_new_Beta = new string[linenum1-1];
+            string[] Array_new_NM = new string[linenum1 - 1];
+            string[] Array_new_Alpha = new string[linenum1 - 1];
+            string[] Array_new_Beta = new string[linenum1 - 1];
             //------------------------
 
             int AOI = 65;
@@ -58,7 +58,8 @@ namespace _2_1_make_SiO2_1000_nm_new
                 si_nm = Convert.ToSingle(Sirecords[i].nm);
                 si_n = Convert.ToSingle(Sirecords[i].n);
                 si_k = Convert.ToSingle(Sirecords[i].k);
-
+                //공비에 따로 마이너스해준 Rp Rs를 만들어 비교
+                //R,S
                 if (si_nm > 350 && si_nm < 980)
                 {
                     Complex N0 = new Complex(1, 0); // 공기 = 1                        
@@ -115,21 +116,30 @@ namespace _2_1_make_SiO2_1000_nm_new
                     Complex A = new Complex(0, -1) * (2 * Beta_thick);
 
                     // 통합반사계수(P,S)
+
                     Complex Total_reflect_P = (reflect_P_01 + (reflect_P_12 * Complex.Exp(A)))
-                                                / (1 + reflect_P_01 * (reflect_P_12 * Complex.Exp(A)));
+                                           / (1 + reflect_P_01 * (reflect_P_12 * Complex.Exp(A)));
                     Complex Total_reflect_S =
                         (reflect_s_01 + (reflect_s_12 * Complex.Exp(A)))
                         / (1 + reflect_s_01 * (reflect_s_12 * Complex.Exp(A)));
-                     
 
-                    Complex Rp = reflect_P_01 + (trans_P_01 * reflect_P_12 * trans_P_12 * Complex.Exp(A)) * Sigma_P(200);
-                    Complex Rs = reflect_s_01 + (trans_s_01 * reflect_s_12 * trans_s_12 * Complex.Exp(A)) * Sigma_S(200);
+
+                    //Complex Rp = reflect_P_01 + (trans_P_01 * reflect_P_12 * trans_P_12 * Complex.Exp(A)) * Sigma_P(200);
+                    //Complex Rs = reflect_s_01 + (trans_s_01 * reflect_s_12 * trans_s_12 * Complex.Exp(A)) * Sigma_S(200);
 
                     //Console.WriteLine("{0} {1}", Total_reflect_P, Total_reflect_S);
+                    Complex New_sigma_Pa = (reflect_P_01 + (reflect_P_12 * Complex.Exp(A)));
+                    Complex New_sigma_Sa = (reflect_s_01 + (reflect_s_12 * Complex.Exp(A)));
 
+                    Complex New_sigma_Pr = -(reflect_P_01 * (reflect_P_12 * Complex.Exp(A)));
+                    Complex New_sigma_Sr = -(reflect_s_01 * (reflect_s_12 * Complex.Exp(A)));
+
+                    Complex New_Rp= New_Sigma_P(10);
+                    Complex New_Rs= New_Sigma_S(10);
 
                     Complex row = (Total_reflect_P / Total_reflect_S);
-                    Complex row_new = (Rp / Rs);
+                    //Complex row_new = (Rp / Rs);
+                    Complex row_new = (New_Rp / New_Rs);
 
                     double row_size = row.Magnitude; // tan(psi)
                     double row_new_size = row_new.Magnitude;
@@ -169,7 +179,31 @@ namespace _2_1_make_SiO2_1000_nm_new
                         }
                         return Sigma_Value;
                     }
-                   // WriteLine("{0} {1} {2} {3}", Sigma_P(8000), Total_reflect_P, Sigma_S(8000), Total_reflect_S);
+
+                   
+                    Complex New_Sigma_P(int n)
+                    {
+                        Complex Sigma_Value = 0;
+                        for (int K = 1; K < n; K++)
+                        {
+                            Sigma_Value += New_sigma_Pa * Complex.Pow(New_sigma_Pr, K - 1);
+                        }
+
+                        return Sigma_Value;
+                    }
+
+                    Complex New_Sigma_S(int n)
+                    {
+                        Complex Sigma_Value = 0;
+                        for (int K = 1; K < n; K++)
+                        {
+                            Sigma_Value += New_sigma_Sa * Complex.Pow(New_sigma_Sr, K - 1);
+                        }
+                        return Sigma_Value;
+                    }
+
+
+                    // WriteLine("{0} {1} {2} {3}", Sigma_P(8000), Total_reflect_P, Sigma_S(8000), Total_reflect_S);
 
                     tan_pow = Math.Pow(Math.Tan((Psi)), 2);
                     a_numeator = tan_pow - Math.Pow(Math.Tan(dou_Rad2deg(45)), 2);
@@ -199,12 +233,12 @@ namespace _2_1_make_SiO2_1000_nm_new
 
                     //무한등비급수 수열 하기전에 "항의 개수"내가 정해서 구하기
                     //Rp 등비수열 구하기
-                    Array_new_NM[i-1] = Convert.ToString(sio2_nm);
-                    Array_new_Alpha[i-1] = Convert.ToString(new_alpha);
-                    Array_new_Beta[i-1] = Convert.ToString(new_beta);
+                    Array_new_NM[i - 1] = Convert.ToString(sio2_nm);
+                    Array_new_Alpha[i - 1] = Convert.ToString(new_alpha);
+                    Array_new_Beta[i - 1] = Convert.ToString(new_beta);
 
 
-                   
+
                 }
 
 
