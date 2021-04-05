@@ -134,8 +134,8 @@ namespace _2_1_make_SiO2_1000_nm_new
                     Complex New_sigma_Pr = -(reflect_P_01 * (reflect_P_12 * Complex.Exp(A)));
                     Complex New_sigma_Sr = -(reflect_s_01 * (reflect_s_12 * Complex.Exp(A)));
 
-                    Complex New_Rp= New_Sigma_P(10);
-                    Complex New_Rs= New_Sigma_S(10);
+                    Complex New_Rp= New_Sigma_P(1);
+                    Complex New_Rs= New_Sigma_S(1);
 
                     Complex row = (Total_reflect_P / Total_reflect_S);
                     //Complex row_new = (Rp / Rs);
@@ -184,7 +184,7 @@ namespace _2_1_make_SiO2_1000_nm_new
                     Complex New_Sigma_P(int n)
                     {
                         Complex Sigma_Value = 0;
-                        for (int K = 1; K < n; K++)
+                        for (int K = 1; K <= n; K++)
                         {
                             Sigma_Value += New_sigma_Pa * Complex.Pow(New_sigma_Pr, K - 1);
                         }
@@ -195,7 +195,7 @@ namespace _2_1_make_SiO2_1000_nm_new
                     Complex New_Sigma_S(int n)
                     {
                         Complex Sigma_Value = 0;
-                        for (int K = 1; K < n; K++)
+                        for (int K = 1; K <= n; K++)
                         {
                             Sigma_Value += New_sigma_Sa * Complex.Pow(New_sigma_Sr, K - 1);
                         }
