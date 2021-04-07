@@ -12,3 +12,10 @@ C:\Users\dohyu\source\repos\git\Bit\Bit_First_Project_Auros\2_1_make_SiO2_1000_n
 C:\Users\dohyu\source\repos\git\Bit\Bit_First_Project_Auros\2_1_make_SiO2_1000_nm_new\2_1_make_SiO2_1000_nm_new\obj\Debug\2_1_make_SiO2_1000_nm_new.csproj.CoreCompileInputs.cache
 C:\Users\dohyu\source\repos\git\Bit\Bit_First_Project_Auros\2_1_make_SiO2_1000_nm_new\2_1_make_SiO2_1000_nm_new\obj\Debug\2_1_make_SiO2_1000_nm_new.exe
 C:\Users\dohyu\source\repos\git\Bit\Bit_First_Project_Auros\2_1_make_SiO2_1000_nm_new\2_1_make_SiO2_1000_nm_new\obj\Debug\2_1_make_SiO2_1000_nm_new.pdb
+C:\Users\천도현\source\Bit_1st\2_1_make_SiO2_1000_nm_new\2_1_make_SiO2_1000_nm_new\bin\Debug\2_1_make_SiO2_1000_nm_new.exe.config
+C:\Users\천도현\source\Bit_1st\2_1_make_SiO2_1000_nm_new\2_1_make_SiO2_1000_nm_new\bin\Debug\2_1_make_SiO2_1000_nm_new.exe
+C:\Users\천도현\source\Bit_1st\2_1_make_SiO2_1000_nm_new\2_1_make_SiO2_1000_nm_new\bin\Debug\2_1_make_SiO2_1000_nm_new.pdb
+C:\Users\천도현\source\Bit_1st\2_1_make_SiO2_1000_nm_new\2_1_make_SiO2_1000_nm_new\obj\Debug\2_1_make_SiO2_1000_nm_new.csprojAssemblyReference.cache
+C:\Users\천도현\source\Bit_1st\2_1_make_SiO2_1000_nm_new\2_1_make_SiO2_1000_nm_new\obj\Debug\2_1_make_SiO2_1000_nm_new.csproj.CoreCompileInputs.cache
+C:\Users\천도현\source\Bit_1st\2_1_make_SiO2_1000_nm_new\2_1_make_SiO2_1000_nm_new\obj\Debug\2_1_make_SiO2_1000_nm_new.exe
+C:\Users\천도현\source\Bit_1st\2_1_make_SiO2_1000_nm_new\2_1_make_SiO2_1000_nm_new\obj\Debug\2_1_make_SiO2_1000_nm_new.pdb
