@@ -19,3 +19,10 @@ C:\Bit_First_Project_Auros\1_1_make_new_txt\1_1_make_new_txt\obj\Debug\1_1_make_
 C:\Bit_First_Project_Auros\1_1_make_new_txt\1_1_make_new_txt\obj\Debug\1_1_make_new_txt.csproj.CoreCompileInputs.cache
 C:\Bit_First_Project_Auros\1_1_make_new_txt\1_1_make_new_txt\obj\Debug\1_1_make_new_txt.exe
 C:\Bit_First_Project_Auros\1_1_make_new_txt\1_1_make_new_txt\obj\Debug\1_1_make_new_txt.pdb
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\1_1_make_new_txt\1_1_make_new_txt\bin\Debug\1_1_make_new_txt.exe.config
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\1_1_make_new_txt\1_1_make_new_txt\bin\Debug\1_1_make_new_txt.exe
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\1_1_make_new_txt\1_1_make_new_txt\bin\Debug\1_1_make_new_txt.pdb
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\1_1_make_new_txt\1_1_make_new_txt\obj\Debug\1_1_make_new_txt.csprojAssemblyReference.cache
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\1_1_make_new_txt\1_1_make_new_txt\obj\Debug\1_1_make_new_txt.csproj.CoreCompileInputs.cache
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\1_1_make_new_txt\1_1_make_new_txt\obj\Debug\1_1_make_new_txt.exe
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\1_1_make_new_txt\1_1_make_new_txt\obj\Debug\1_1_make_new_txt.pdb

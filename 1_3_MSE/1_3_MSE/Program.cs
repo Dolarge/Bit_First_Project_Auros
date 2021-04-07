@@ -14,10 +14,8 @@ namespace _1_3_MSE
         static void Main(string[] args)
         {
             char[] replace = { ' ', ',', '\t', '\n' };
-            //string[] Silines = File.ReadAllLines("Si_new_65_alpha.txt", Encoding.Default);
-            //string[] SiO2lines = File.ReadAllLines("SiO2_2nm_on_Si_new.dat", Encoding.Default);
-            string[] Silines = File.ReadAllLines("SiO2_1000nm_on_Si_new.dat", Encoding.Default);
-            string[] SiO2lines = File.ReadAllLines("SiO2_1000nm_on_Si_new_dolarge.dat", Encoding.Default);
+            string[] Silines = File.ReadAllLines("Si_new_65_alpha.txt", Encoding.Default);
+            string[] SiO2lines = File.ReadAllLines("SiO2_2nm_on_Si_new.dat", Encoding.Default);            
 
             int Si_nm_linesNum = Silines.Length;
             int SiO2_nm_linesNum = SiO2lines.Length;

@@ -69,15 +69,15 @@ namespace _1_3_2__350_1000nm_spectrum
                     P_val = Math.Pow(reflect_P.Magnitude, 2);
                     S_Val = Math.Pow(reflect_s.Magnitude, 2);
                     // 반사계수의 비
-                    Complex row = (reflect_P / reflect_s);
-                    double row_size = row.Magnitude;
+                    Complex rho = (reflect_P / reflect_s);
+                    double rho_size = rho.Magnitude;
 
                     ////////////////////////////////////////////////////////////////////////
 
                     // 65도(AOI)에서 Psi, Delta 값 구하기                       
-                    double Psi = Math.Atan(row_size);
+                    double Psi = Math.Atan(rho_size);
 
-                    double Delta = row.Phase;
+                    double Delta = rho.Phase;
 
                     double tan_pow = 0.0;
                     double a_numeator = 0.0, a_denominator = 0.0;

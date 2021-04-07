@@ -14,9 +14,9 @@ namespace _1_1_make_new_txt
             StreamWriter streamWriter = new StreamWriter(new FileStream("SiO2_2nm_on_Si_new.dat", FileMode.Create));
             streamWriter.WriteLine("wavelength(nm)\t AOI\t\t alpha\t beta");
 
-            float floatwavelength = 0.0f;
-            float floatPsi = 0.0f;
-            float floatDelta = 0.0f;
+            double nm = 0.0f;
+            double Psi = 0.0f;
+            double Delta = 0.0f;
             double tan_sq = 0.0;
             double a_numeator, a_denominator = 0.0;
             double b_numeator, b_denominator = 0.0;
@@ -29,23 +29,23 @@ namespace _1_1_make_new_txt
 
             for (int i = 1; i < linenum; i++)
             {
-                floatwavelength = Convert.ToSingle(records[i].wavelength);
-                floatPsi = Convert.ToSingle(records[i].Psi);
-                floatDelta = Convert.ToSingle(records[i].Delta);
+                nm = Convert.ToSingle(records[i].wavelength);
+                Psi = Convert.ToSingle(records[i].Psi);
+                Delta = Convert.ToSingle(records[i].Delta);
 
                 // 수식 적용
-                tan_sq = Math.Pow(Math.Tan(Rad2deg(floatPsi)), 2);
+                tan_sq = Math.Pow(Math.Tan(Rad2deg(Psi)), 2);
                 a_numeator = tan_sq - Math.Pow(Math.Tan(Rad2deg(45)), 2);
                 a_denominator = tan_sq + Math.Pow(Math.Tan(Rad2deg(45)), 2); ;
                 alpha = a_numeator / a_denominator;
 
-                b_numeator = 2 * Math.Tan(Rad2deg(floatPsi)) * Math.Cos(Rad2deg(floatDelta));
+                b_numeator = 2 * Math.Tan(Rad2deg(Psi)) * Math.Cos(Rad2deg(Delta));
                 b_denominator = tan_sq + Math.Pow(Math.Tan(Rad2deg(45)), 2); ;
                 beta = b_numeator / b_denominator;
 
-                if (floatwavelength > 350 && floatwavelength < 980)
+                if (nm > 350 && nm < 980)
                 {
-                    streamWriter.WriteLine("{0}\t {1}\t {2}\t {3}", floatwavelength, records[i].AOI, alpha, beta);
+                    streamWriter.WriteLine("{0}\t {1}\t {2}\t {3}", nm, records[i].AOI, alpha, beta);
                 }
             }
             streamWriter.Close();

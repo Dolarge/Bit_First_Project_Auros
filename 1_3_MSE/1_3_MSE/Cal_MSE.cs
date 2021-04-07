@@ -14,9 +14,8 @@ namespace _1_3_MSE
     {
         public static void Cal_MSE_cal(List<Si_new_cal_Data> Sirecords, List<SiO2_2nm_exp_Data> SiO2records, int linenum1, int linenum2)
         {
-            //StreamWriter streamWriter = new StreamWriter(new FileStream("MSE.txt", FileMode.Create));
-            StreamWriter streamWriter = new StreamWriter(new FileStream("MSE_SiO2_1000nm.txt", FileMode.Create));
-            //streamWriter.WriteLine("wave(nm)\t\t AOI");
+            StreamWriter streamWriter = new StreamWriter(new FileStream("MSE.txt", FileMode.Create));            
+            
             double si_nm = 0.0;
             double si_AOI = 0.0;
             double si_alpha = 0.0;
@@ -68,8 +67,7 @@ namespace _1_3_MSE
 
 
             streamWriter.WriteLine("MSE = {0}", MSE);
-            //WriteLine("MSE.txt 생성 완료");
-            WriteLine("MSE_SiO2_1000nm.txt 생성 완료");
+            WriteLine("MSE.txt 생성 완료");            
             streamWriter.Close();
         }
     }

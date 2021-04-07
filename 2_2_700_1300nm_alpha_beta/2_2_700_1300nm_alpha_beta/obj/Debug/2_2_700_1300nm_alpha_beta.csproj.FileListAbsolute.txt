@@ -1,0 +1,7 @@
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\2_2_700_1300nm_alpha_beta\2_2_700_1300nm_alpha_beta\bin\Debug\2_2_700_1300nm_alpha_beta.exe.config
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\2_2_700_1300nm_alpha_beta\2_2_700_1300nm_alpha_beta\bin\Debug\2_2_700_1300nm_alpha_beta.exe
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\2_2_700_1300nm_alpha_beta\2_2_700_1300nm_alpha_beta\bin\Debug\2_2_700_1300nm_alpha_beta.pdb
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\2_2_700_1300nm_alpha_beta\2_2_700_1300nm_alpha_beta\obj\Debug\2_2_700_1300nm_alpha_beta.csprojAssemblyReference.cache
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\2_2_700_1300nm_alpha_beta\2_2_700_1300nm_alpha_beta\obj\Debug\2_2_700_1300nm_alpha_beta.csproj.CoreCompileInputs.cache
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\2_2_700_1300nm_alpha_beta\2_2_700_1300nm_alpha_beta\obj\Debug\2_2_700_1300nm_alpha_beta.exe
+C:\Users\bit\Desktop\4월1일\Bit_First_Project_Auros-master (5)\Bit_First_Project_Auros-master\2_2_700_1300nm_alpha_beta\2_2_700_1300nm_alpha_beta\obj\Debug\2_2_700_1300nm_alpha_beta.pdb
