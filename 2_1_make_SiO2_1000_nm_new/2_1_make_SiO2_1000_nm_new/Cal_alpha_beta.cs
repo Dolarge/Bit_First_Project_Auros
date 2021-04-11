@@ -229,9 +229,7 @@ namespace _2_1_make_SiO2_1000_nm_new
 
                     //배열에 저장 -> 추가로 뽑아내기
                     //streamWriter.WriteLine("{0} {1} {2} {3}", sio2_nm, AOI, alpha, beta);
-
-
-                    //무한등비급수 수열 하기전에 "항의 개수"내가 정해서 구하기
+                 
                     //Rp 등비수열 구하기
                     Array_new_NM[i - 1] = Convert.ToString(sio2_nm);
                     Array_new_Alpha[i - 1] = Convert.ToString(new_alpha);
