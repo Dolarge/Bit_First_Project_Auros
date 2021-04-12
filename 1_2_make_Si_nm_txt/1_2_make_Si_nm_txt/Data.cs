@@ -16,7 +16,7 @@ namespace _1_2_make_Si_nm_txt
         public string e2 { get; set; }
     }
 
-    class SiO2_txt_data
+    class SiO2_data
     {
         public string ANGSTROMS { get; set; }
         public string n { get; set; }

@@ -11,7 +11,7 @@ namespace _1_3_1_700nm_spectrum
 {
     class Cal_reflect
     {
-        public static void Si_relect(List<Si_nm_Data> records, int linenum)
+        public static void Si_reflect(List<Si_nm_Data> records, int linenum)
         {
             StreamWriter streamWriter = new StreamWriter(new FileStream("Si_new_700_reflect.txt", FileMode.Create));
             streamWriter.WriteLine("wave(nm)\t AOI\t P반사율\t S반사율");

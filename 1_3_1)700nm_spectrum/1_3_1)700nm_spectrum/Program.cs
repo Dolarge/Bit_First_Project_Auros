@@ -29,7 +29,7 @@ namespace _1_3_1_700nm_spectrum
                 });
                 //Console.WriteLine($"{splitData[0]}\t{splitData[1]}\t{splitData[2]}");
             }
-            Cal_reflect.Si_relect(Sirecords, Si_nm_linesNum);            
+            Cal_reflect.Si_reflect(Sirecords, Si_nm_linesNum);            
         }
     }
 }

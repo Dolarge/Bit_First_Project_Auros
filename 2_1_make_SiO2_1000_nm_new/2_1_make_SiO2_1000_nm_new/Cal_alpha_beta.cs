@@ -137,18 +137,18 @@ namespace _2_1_make_SiO2_1000_nm_new
                     Complex New_Rp= New_Sigma_P(1);
                     Complex New_Rs= New_Sigma_S(1);
 
-                    Complex row = (Total_reflect_P / Total_reflect_S);
-                    //Complex row_new = (Rp / Rs);
-                    Complex row_new = (New_Rp / New_Rs);
+                    Complex rho = (Total_reflect_P / Total_reflect_S);
+                    //Complex rho_new = (Rp / Rs);
+                    Complex rho_new = (New_Rp / New_Rs);
 
-                    double row_size = row.Magnitude; // tan(psi)
-                    double row_new_size = row_new.Magnitude;
+                    double rho_size = rho.Magnitude; // tan(psi)
+                    double rho_new_size = rho_new.Magnitude;
 
-                    double Psi = Math.Atan(row_size);
-                    double Psi_new = Math.Atan(row_new_size);
+                    double Psi = Math.Atan(rho_size);
+                    double Psi_new = Math.Atan(rho_new_size);
 
-                    double Delta = row.Phase;
-                    double Delta_new = row_new.Phase;
+                    double Delta = rho.Phase;
+                    double Delta_new = rho_new.Phase;
 
                     double tan_pow = 0.0;
                     double a_numeator = 0.0, a_denominator = 0.0;
@@ -229,9 +229,7 @@ namespace _2_1_make_SiO2_1000_nm_new
 
                     //배열에 저장 -> 추가로 뽑아내기
                     //streamWriter.WriteLine("{0} {1} {2} {3}", sio2_nm, AOI, alpha, beta);
-
-
-                    //무한등비급수 수열 하기전에 "항의 개수"내가 정해서 구하기
+                 
                     //Rp 등비수열 구하기
                     Array_new_NM[i - 1] = Convert.ToString(sio2_nm);
                     Array_new_Alpha[i - 1] = Convert.ToString(new_alpha);

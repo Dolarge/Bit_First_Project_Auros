@@ -22,7 +22,7 @@ namespace _1_2_make_Si_nm_txt
             int SIO2linesNum = SIO2lines.Length;
 
             List<Si_Data> Sirecords = new List<Si_Data>();
-            List<SiO2_txt_data> SIO2records = new List<SiO2_txt_data>();
+            List<SiO2_data> SIO2records = new List<SiO2_data>();
 
 
             //////////////////////////////////////////////////////////////////////////////
@@ -48,7 +48,7 @@ namespace _1_2_make_Si_nm_txt
             foreach (var line in SIO2lines)
             {
                 string[] splitData = line.Split(replace, StringSplitOptions.RemoveEmptyEntries);
-                SIO2records.Add(new SiO2_txt_data
+                SIO2records.Add(new SiO2_data
                 {
                     ANGSTROMS = splitData[0],
                     n = splitData[1],

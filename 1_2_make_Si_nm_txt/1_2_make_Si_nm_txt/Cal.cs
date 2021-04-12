@@ -46,17 +46,14 @@ namespace _1_2_make_Si_nm_txt
                 k_permitivity = 0.5 * (Math.Sqrt(sqrt_permitivity) - si_e1);
                 k = Math.Sqrt(k_permitivity);
 
-                
-                // 350이상 1000 이하인거 new 파일에 출력
-                
-              
+               
                 streamWriter1.WriteLine("{0}\t {1}\t {2}", si_nm, n, k);
                 
             }
             streamWriter1.Close();
         }
 
-        public static void SiO2_nm_Cal(List<SiO2_txt_data> records, int linenum)
+        public static void SiO2_nm_Cal(List<SiO2_data> records, int linenum)
         {
             StreamWriter streamWriter = new StreamWriter(new FileStream("SIO2_nm.txt", FileMode.Create));
             streamWriter.WriteLine("wavelength(nm)\t n\t k");
