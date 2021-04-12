@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\dohyu\\.nuget\\packages\\": {}
+    "C:\\Users\\천도현\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dohyu\\source\\repos\\KKoKiri\\KKoKiri\\KKoKiri.csproj",
+      "projectUniqueName": "C:\\Users\\천도현\\source\\Bit_1st\\1_2_Dolarge_Cubic\\KKoKiri\\KKoKiri.csproj",
       "projectName": "KKoKiri",
-      "projectPath": "C:\\Users\\dohyu\\source\\repos\\KKoKiri\\KKoKiri\\KKoKiri.csproj",
-      "packagesPath": "C:\\Users\\dohyu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dohyu\\source\\repos\\KKoKiri\\KKoKiri\\obj\\",
+      "projectPath": "C:\\Users\\천도현\\source\\Bit_1st\\1_2_Dolarge_Cubic\\KKoKiri\\KKoKiri.csproj",
+      "packagesPath": "C:\\Users\\천도현\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\천도현\\source\\Bit_1st\\1_2_Dolarge_Cubic\\KKoKiri\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dohyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\천도현\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
