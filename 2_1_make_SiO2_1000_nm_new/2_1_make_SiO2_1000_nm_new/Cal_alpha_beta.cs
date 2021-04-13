@@ -210,7 +210,7 @@ namespace _2_1_make_SiO2_1000_nm_new
                     a_denominator = tan_pow + Math.Pow(Math.Tan(dou_Rad2deg(45)), 2);
                     alpha = a_numeator / a_denominator;
 
-                    b_numeator = 2 * Math.Tan((Delta)) * Math.Cos((Delta)) * Math.Tan(dou_Rad2deg(45));
+                    b_numeator = 2 * Math.Tan((Psi)) * Math.Cos((Delta)) * Math.Tan(dou_Rad2deg(45));
                     b_denominator = tan_pow + Math.Pow(Math.Tan(dou_Rad2deg(45)), 2);
                     beta = b_numeator / b_denominator;
 
