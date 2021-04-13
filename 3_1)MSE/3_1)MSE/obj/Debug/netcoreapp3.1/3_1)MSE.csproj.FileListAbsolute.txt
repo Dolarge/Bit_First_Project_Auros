@@ -1,0 +1,13 @@
+C:\Users\BIT\Downloads\Bit_First_Project_Auros-master\Bit_First_Project_Auros-master\3_1)MSE\3_1)MSE\bin\Debug\netcoreapp3.1\3_1)MSE.exe
+C:\Users\BIT\Downloads\Bit_First_Project_Auros-master\Bit_First_Project_Auros-master\3_1)MSE\3_1)MSE\bin\Debug\netcoreapp3.1\3_1)MSE.deps.json
+C:\Users\BIT\Downloads\Bit_First_Project_Auros-master\Bit_First_Project_Auros-master\3_1)MSE\3_1)MSE\bin\Debug\netcoreapp3.1\3_1)MSE.runtimeconfig.json
+C:\Users\BIT\Downloads\Bit_First_Project_Auros-master\Bit_First_Project_Auros-master\3_1)MSE\3_1)MSE\bin\Debug\netcoreapp3.1\3_1)MSE.runtimeconfig.dev.json
+C:\Users\BIT\Downloads\Bit_First_Project_Auros-master\Bit_First_Project_Auros-master\3_1)MSE\3_1)MSE\bin\Debug\netcoreapp3.1\3_1)MSE.dll
+C:\Users\BIT\Downloads\Bit_First_Project_Auros-master\Bit_First_Project_Auros-master\3_1)MSE\3_1)MSE\bin\Debug\netcoreapp3.1\3_1)MSE.pdb
+C:\Users\BIT\Downloads\Bit_First_Project_Auros-master\Bit_First_Project_Auros-master\3_1)MSE\3_1)MSE\obj\Debug\netcoreapp3.1\3_1)MSE.csprojAssemblyReference.cache
+C:\Users\BIT\Downloads\Bit_First_Project_Auros-master\Bit_First_Project_Auros-master\3_1)MSE\3_1)MSE\obj\Debug\netcoreapp3.1\3_1)MSE.AssemblyInfoInputs.cache
+C:\Users\BIT\Downloads\Bit_First_Project_Auros-master\Bit_First_Project_Auros-master\3_1)MSE\3_1)MSE\obj\Debug\netcoreapp3.1\3_1)MSE.AssemblyInfo.cs
+C:\Users\BIT\Downloads\Bit_First_Project_Auros-master\Bit_First_Project_Auros-master\3_1)MSE\3_1)MSE\obj\Debug\netcoreapp3.1\3_1)MSE.csproj.CoreCompileInputs.cache
+C:\Users\BIT\Downloads\Bit_First_Project_Auros-master\Bit_First_Project_Auros-master\3_1)MSE\3_1)MSE\obj\Debug\netcoreapp3.1\3_1)MSE.dll
+C:\Users\BIT\Downloads\Bit_First_Project_Auros-master\Bit_First_Project_Auros-master\3_1)MSE\3_1)MSE\obj\Debug\netcoreapp3.1\3_1)MSE.pdb
+C:\Users\BIT\Downloads\Bit_First_Project_Auros-master\Bit_First_Project_Auros-master\3_1)MSE\3_1)MSE\obj\Debug\netcoreapp3.1\3_1)MSE.genruntimeconfig.cache
